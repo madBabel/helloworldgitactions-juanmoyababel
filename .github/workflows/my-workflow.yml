@@ -6,7 +6,8 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - name: fail_step
-        run: exit 1
       - name: echo-hello-world
         run: echo "Hola Mundo"
+
+      - name: fail_step
+        run: exit 1
